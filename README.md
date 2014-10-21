@@ -1,4 +1,4 @@
-# Casper
+# Casper zh-CN
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/).
 

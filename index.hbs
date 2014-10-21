@@ -5,7 +5,7 @@
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">订阅</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
@@ -13,7 +13,7 @@
             <h2 class="page-description">{{@blog.description}}</h2>
         </div>
     </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">下拉显示</span></a>
 </header>
 
 {{! The main content area on the homepage }}

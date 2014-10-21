@@ -4,13 +4,13 @@
 {{! The big featured header }}
 <header class="main-header tag-head {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
+        <a class="back-button icon-arrow-left" href="{{@blog.url}}">首页</a>
         <a class="subscribe-button icon-feed" href="{{@blog.url}}/tag/{{tag.slug}}/rss/">{{tag.name}}</a>
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{tag.name}}</h1>
-            <h2 class="page-description">A {{pagination.total}}-post collection</h2>
+            <h2 class="page-description">共 {{pagination.total}} 篇文章</h2>
         </div>
     </div>
 </header>

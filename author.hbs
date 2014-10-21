@@ -7,7 +7,7 @@
 {{#author}}
     <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
         <nav class="main-nav overlay clearfix">
-            <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
+            <a class="back-button icon-arrow-left" href="{{@blog.url}}">首页</a>
             <a class="subscribe-button icon-feed" href="{{url}}rss/">{{name}}</a>
         </nav>
     </header>
@@ -23,7 +23,7 @@
         <div class="author-meta">
             {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
             {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='没有文章' singular='% 篇文章' plural='% 篇文章'}} </span>
         </div>
     </section>
 {{/author}}

@@ -8,13 +8,15 @@
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-        <a class="back-button icon-arrow-left" href="{{@blog.url}}">首页</a>
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">订阅</a>
+
+        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+        {{#if @blog.navigation}}
+            <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">菜单</span></a>
+        {{/if}}
     </nav>
 </header>
 
 <main class="content" role="main">
-
     <article class="{{post_class}}">
 
         <header class="post-header">
@@ -90,7 +92,6 @@
         </footer>
 
     </article>
-
 </main>
 
 {{/post}}
